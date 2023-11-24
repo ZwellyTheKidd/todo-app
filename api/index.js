@@ -15,7 +15,7 @@ var database;
 app.listen(5038,() => {
     Mongoclient.connect(CONNECTION_STRING,(error,client)=> {
         database=client.db(DATABASENAME);
-        console.log("connection successful");
+        console.log("connection to the database successful");
     })
 });
 
