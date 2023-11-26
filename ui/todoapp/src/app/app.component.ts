@@ -33,11 +33,11 @@ export class AppComponent {
     this.http.post(this.APIURL+'AddNotes',formData).subscribe(data=>{
       alert(data);
       this.getNotes();
+      (<HTMLInputElement>document.getElementById('newNotes')).value="";
     })
   }
 
   deleteNote(id:any){
-   
     this.http.delete(this.APIURL+'DeleteNotes?id='+id).subscribe(data=>{
       alert(data);
       this.getNotes();
