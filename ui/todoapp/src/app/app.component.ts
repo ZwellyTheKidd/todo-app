@@ -25,6 +25,19 @@ export class AppComponent {
     this.getNotes();
   }
 
+  addNote(){
+    var newNotes=(<HTMLInputElement>document.getElementById('newNotes')).value;
+    var formData=new FormData();
+    formData.append('newNotes',newNotes);
+    
+    this.http.post(this.APIURL+'AddNotes',formData).subscribe(data=>{
+      alert(data);
+      this.getNotes();
+    })
+  }
+
+
+
 
 
 
