@@ -29,13 +29,20 @@ export class AppComponent {
     var newNotes=(<HTMLInputElement>document.getElementById('newNotes')).value;
     var formData=new FormData();
     formData.append('newNotes',newNotes);
-    
+
     this.http.post(this.APIURL+'AddNotes',formData).subscribe(data=>{
       alert(data);
       this.getNotes();
     })
   }
 
+  deleteNote(id:any){
+   
+    this.http.delete(this.APIURL+'DeleteNotes?id='+id).subscribe(data=>{
+      alert(data);
+      this.getNotes();
+    })
+  }
 
 
 

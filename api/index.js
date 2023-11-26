@@ -43,7 +43,7 @@ app.delete('/api/todoapp/DeleteNotes',(request,response)=>{
     collection.deleteOne({
         id:request.query.id
     })
-    response.json("Delete successfully");
+    response.json("Deleted Successfully");
 });
 
 
