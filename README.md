@@ -25,14 +25,14 @@ Ensure that you have the following software installed:
 
 1. Clone the repository:
 
-    ```bash
+
     git clone [https://github.com/your-username/mean-stack-app-ts.git](https://github.com/ZwellyTheKidd/todo-app)
     cd mean-stack-app-ts
     ```
 
 2. Install dependencies:
 
-    ```bash
+
     npm install
     ```
 
@@ -43,7 +43,7 @@ Ensure that you have the following software installed:
 
 4. Build and run the application:
 
-    ```bash
+
     npm run build
     npm start
     ```
@@ -65,20 +65,17 @@ Describe the main structure of your project, especially highlighting important d
 Development
 Provide information on how to run the project in development mode, including any development-specific commands or tools.
 
-bash
-Copy code
+
 npm run dev
 Building for Production
 Explain how to build the project for production deployment.
 
-bash
-Copy code
+
 npm run build
 Testing
 If applicable, provide information on how to run tests and ensure code quality.
 
-bash
-Copy code
+
 npm test
 Contributing
 Explain how others can contribute to your project and the process for submitting pull requests.
