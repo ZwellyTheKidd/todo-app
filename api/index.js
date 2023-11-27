@@ -46,6 +46,22 @@ app.delete('/api/todoapp/DeleteNotes',(request,response)=>{
     response.json("Deleted Successfully");
 });
 
+// app.put('/api/todoapp/UpdateNotes',(request,response)=>{
+//     collection.updateOne(
+//         { id: request.query.id }, // The condition to match the document to update
+//         {
+//             $set: {
+//                 // Update fields and values here
+//                 description: request.body.updatedDescription,
+//                 // Add more fields as needed
+//             }
+//         }
+//     );
+//     response.json("updated Successfully");
+// });
+
+
+
 
 
 
