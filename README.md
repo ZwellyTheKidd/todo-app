@@ -26,7 +26,7 @@ Ensure that you have the following software installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/mean-stack-app-ts.git
+    git clone [https://github.com/your-username/mean-stack-app-ts.git](https://github.com/ZwellyTheKidd/todo-app)
     cd mean-stack-app-ts
     ```
 
@@ -48,7 +48,7 @@ Ensure that you have the following software installed:
     npm start
     ```
 
-    The application should be accessible at `http://localhost:3000`.
+    The application should be accessible at `http://localhost:5038`.
 
 ## Project Structure
 
