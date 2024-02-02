@@ -14,8 +14,10 @@ var DATABASENAME = 'todoappdb';
 var database;
 var collection;
 
+const port=process.env.PORT ||5040;
 
-app.listen(5038,() => {
+
+app.listen(port,() => {
     Mongoclient.connect(CONNECTION_STRING,(error,client)=> {
         database=client.db(DATABASENAME);
         collection = database.collection("todoappcollection");

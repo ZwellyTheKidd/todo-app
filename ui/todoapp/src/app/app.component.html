@@ -4,6 +4,9 @@
 <button (click)="addNote()">Add Note</button>
 
 <ul *ngFor="let note of notes">
-  <li>{{note.description}}</li>
+  <li>{{note.name}}</li>
+  <li>{{note.email}}</li>
+  <li>{{note.number}}</li>
+  <li>{{note.address}}</li>
   <button (click)="deleteNote(note.id)">Delete</button>
 </ul>
